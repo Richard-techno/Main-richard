@@ -1,0 +1,179 @@
+body{
+    background-image: url(space\ image.jpeg);
+    background-color: rgb(81, 52, 100);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    background-repeat: repeat;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    margin: 0px;
+}
+abbr{
+    text-decoration: underline;
+}
+div{
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    padding-top: 0.1px;
+    border-radius: 8px;
+    max-width: 400px;
+    transition: 1s;
+    position: relative;
+    margin: 20px;
+}
+div.yellow::after, div.yellow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from -45deg,yellow,orange,yellow);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: 3s
+}
+div.blue::after, div.blue::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from -45deg,blue,aquamarine,blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+div.rainbow::after, div.rainbow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from -45deg,red, orange , yellow, lime, blue, purple, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+div.purple::after, div.purple::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from -45deg,purple,violet,purple);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+div.green::after, div.green::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from -45deg,lime,green,lime);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+div::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(36, 36, 36);
+    border: aliceblue 2px solid;
+    border-radius: 3px;
+    color: aliceblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aliceblue;
+    color: rgb(36, 36, 36);
+}
+.nt{    
+    background-color: crimson;
+}
+#title{ /* Makes the title glow */
+    color: aliceblue;
+    text-shadow: 0px 0px 12px;
+    translate: 0px 30px;
+}
+img{ /* area around image */
+    margin: 10px;
+}
+section{    /* space station area */
+    border-top: rgb(112, 112, 112) 8px dashed;
+    border-bottom: rgb(112, 112, 112) 8px dashed;
+    color: black;
+    background-color: rgb(151, 151, 151);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    
+}
+p{     /* So paragraphs can't get infinitely long */
+    max-width: 400px;
+}
+
+td,th{ /* Table borders */
+    border-left: 3px white solid;
+    border-right: 3px white solid;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+br.db {  /* Double line break class for the <br> tag */
+    display: block;
+    height: 2em;
+    content: "";
+}
+section div.bb{
+    background-color: brown;
+    height: 100px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.rb{  
+    background-color: red;
+    font-size: larger;
+    font-weight: bold;
+    --sss: 120px;
+    --inft: 99999999999999999999999999999999999999999999999999s;
+    width: var(--sss);
+    height: var(--sss);
+    border-radius: 50%;
+    border: none;
+
+
+}
+.rb:hover{
+    translate: 0px -8px;
+    background-color: red;
+    color: aliceblue;
+}
